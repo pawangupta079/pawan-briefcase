@@ -2,6 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Download, Eye, Github, Linkedin } from "lucide-react";
 import resumeImage from "@/assets/resume.png";
+import resumePDF from "@/assets/resume.pdf"; // <-- add your PDF here
 
 const Resume = () => {
   const socialLinks = [
@@ -9,14 +10,14 @@ const Resume = () => {
       icon: Github,
       label: "GitHub",
       href: "https://github.com/pawangupta079",
-      color: "hover:text-purple-400"
+      color: "hover:text-purple-400",
     },
     {
       icon: Linkedin,
-      label: "LinkedIn", 
+      label: "LinkedIn",
       href: "https://www.linkedin.com/in/pawan-kumar-gupta-592463254/",
-      color: "hover:text-blue-400"
-    }
+      color: "hover:text-blue-400",
+    },
   ];
 
   return (
@@ -42,36 +43,30 @@ const Resume = () => {
             </CardHeader>
             <CardContent>
               <div className="relative bg-white rounded-lg p-4 shadow-lg">
-                <img 
-                  src={resumeImage} 
+                <img
+                  src={resumeImage}
                   alt="Pawan Kumar Gupta Resume"
                   className="w-full h-auto rounded border"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent rounded" />
               </div>
-              
+
               <div className="mt-6 space-y-4">
-                <Button 
-                  className="w-full hero-gradient text-lg py-6" 
-                  asChild
-                >
-                  <a 
-                    href="https://github.com/pawangupta079/pawangupta079/blob/main/pawan%20resume%20new(77)all.pdf" 
-                    download="Pawan_Kumar_Gupta_Resume.pdf"
-                  >
+                <Button className="w-full hero-gradient text-lg py-6" asChild>
+                  <a href={resumePDF} download="Pawan_Kumar_Gupta_Resume.pdf">
                     <Download className="mr-2 h-5 w-5" />
                     Download Resume (PDF)
                   </a>
                 </Button>
 
-                <Button 
-                  variant="outline" 
-                  className="w-full text-lg py-6" 
+                <Button
+                  variant="outline"
+                  className="w-full text-lg py-6"
                   asChild
                 >
-                  <a 
-                    href="https://github.com/pawangupta079/pawangupta079/raw/main/Pawan_Kumar_Gupta_Resume.pdf" 
-                    target="_blank" 
+                  <a
+                    href={resumePDF}
+                    target="_blank"
                     rel="noopener noreferrer"
                   >
                     <Eye className="mr-2 h-5 w-5" />
@@ -98,11 +93,15 @@ const Resume = () => {
                     className="flex items-center p-4 rounded-lg glass-effect hover:card-glow transition-smooth group"
                   >
                     <div className="p-3 rounded-full bg-primary/10 group-hover:bg-primary/20 transition-smooth mr-4">
-                      <link.icon className={`h-5 w-5 text-primary ${link.color} transition-smooth`} />
+                      <link.icon
+                        className={`h-5 w-5 text-primary ${link.color} transition-smooth`}
+                      />
                     </div>
                     <div>
                       <div className="font-medium">{link.label}</div>
-                      <div className="text-muted-foreground text-sm">@pawangupta079</div>
+                      <div className="text-muted-foreground text-sm">
+                        @pawangupta079
+                      </div>
                     </div>
                   </a>
                 ))}
@@ -133,8 +132,10 @@ const Resume = () => {
                   </div>
                 </div>
                 <p className="text-muted-foreground leading-relaxed">
-                  Full Stack Developer with expertise in Python, JavaScript, React.js, and Machine Learning. 
-                  Passionate about creating innovative solutions and contributing to dynamic tech environments.
+                  Full Stack Developer with expertise in Python, JavaScript,
+                  React.js, and Machine Learning. Passionate about creating
+                  innovative solutions and contributing to dynamic tech
+                  environments.
                 </p>
               </CardContent>
             </Card>
