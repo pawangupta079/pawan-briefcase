@@ -2,7 +2,12 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Download, Eye, Github, Linkedin } from "lucide-react";
 import resumeImage from "@/assets/resume.png";
-import resumePDF from "@/assets/resume.pdf"; // <-- add your PDF here
+
+// Google Drive links
+const resumeView =
+  "https://drive.google.com/file/d/1FKOWctkl5JEictwXwqQrkKf_32pigZUk/preview"; // for embedded view
+const resumeDownload =
+  "https://drive.google.com/uc?export=download&id=1FKOWctkl5JEictwXwqQrkKf_32pigZUk"; // for download
 
 const Resume = () => {
   const socialLinks = [
@@ -42,18 +47,24 @@ const Resume = () => {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="relative bg-white rounded-lg p-4 shadow-lg">
-                <img
-                  src={resumeImage}
-                  alt="Pawan Kumar Gupta Resume"
-                  className="w-full h-auto rounded border"
+              {/* Embedded Google Drive preview */}
+              <div className="relative bg-white rounded-lg p-2 shadow-lg">
+                <iframe
+                  src={resumeView}
+                  width="100%"
+                  height="500"
+                  className="rounded border"
+                  allow="autoplay"
+                  title="Resume Preview"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent rounded" />
               </div>
 
               <div className="mt-6 space-y-4">
-                <Button className="w-full hero-gradient text-lg py-6" asChild>
-                  <a href={resumePDF} download="Pawan_Kumar_Gupta_Resume.pdf">
+                <Button
+                  className="w-full hero-gradient text-lg py-6"
+                  asChild
+                >
+                  <a href={resumeDownload} download>
                     <Download className="mr-2 h-5 w-5" />
                     Download Resume (PDF)
                   </a>
@@ -65,7 +76,7 @@ const Resume = () => {
                   asChild
                 >
                   <a
-                    href={resumePDF}
+                    href={resumeView}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -120,11 +131,15 @@ const Resume = () => {
                   </div>
                   <div className="p-4 rounded-lg bg-accent/5">
                     <div className="text-2xl font-bold text-accent">350+</div>
-                    <div className="text-sm text-muted-foreground">LeetCode</div>
+                    <div className="text-sm text-muted-foreground">
+                      LeetCode
+                    </div>
                   </div>
                   <div className="p-4 rounded-lg bg-primary/5">
                     <div className="text-2xl font-bold text-primary">5+</div>
-                    <div className="text-sm text-muted-foreground">Projects</div>
+                    <div className="text-sm text-muted-foreground">
+                      Projects
+                    </div>
                   </div>
                   <div className="p-4 rounded-lg bg-accent/5">
                     <div className="text-2xl font-bold text-accent">3+</div>
