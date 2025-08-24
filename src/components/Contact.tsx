@@ -9,19 +9,19 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      content: "hello@portfolio.dev",
-      href: "mailto:hello@portfolio.dev"
+      content: "pkg739895@gmail.com",
+      href: "mailto:pkg739895@gmail.com"
     },
     {
       icon: Phone,
       title: "Phone",
-      content: "+1 (555) 123-4567",
-      href: "tel:+15551234567"
+      content: "+91-9305343440",
+      href: "tel:+919305343440"
     },
     {
       icon: MapPin,
       title: "Location",
-      content: "San Francisco, CA",
+      content: "Greater Noida, UP",
       href: "#"
     }
   ];
@@ -81,8 +81,8 @@ const Contact = () => {
               <h3 className="text-2xl font-semibold mb-6">Let's Connect</h3>
               <p className="text-muted-foreground leading-relaxed mb-8">
                 I'm always interested in hearing about new opportunities and exciting projects. 
-                Whether you're a startup looking to build your first product or an established 
-                company wanting to innovate, I'd love to hear from you.
+                Whether you're looking for a full-stack developer, AI/ML enthusiast, or someone 
+                who can solve complex problems through code, I'd love to connect and discuss how we can work together.
               </p>
             </div>
 

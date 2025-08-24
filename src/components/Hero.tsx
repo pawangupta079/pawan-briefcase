@@ -28,25 +28,36 @@ const Hero = () => {
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
         <div className="space-y-6 animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-            <span className="gradient-text">Creative</span>
+            <span className="gradient-text">Pawan Kumar</span>
             <br />
-            Developer
+            Gupta
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Crafting digital experiences through innovative design and cutting-edge technology
+            Full Stack Developer | AI & ML Enthusiast | Problem Solver
+          </p>
+          
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            B.Tech CSE (AI & ML) student at NIET, Greater Noida with experience in Full Stack Development, 
+            Machine Learning, and Data Analytics. I enjoy building scalable applications and solving real-world problems through code.
           </p>
           
           {/* Social Links */}
           <div className="flex justify-center space-x-6 pt-4">
-            <Button variant="ghost" size="sm" className="transition-bounce hover:scale-110">
-              <Github className="h-5 w-5" />
+            <Button variant="ghost" size="sm" className="transition-bounce hover:scale-110" asChild>
+              <a href="https://github.com/pawangupta" target="_blank" rel="noopener noreferrer">
+                <Github className="h-5 w-5" />
+              </a>
             </Button>
-            <Button variant="ghost" size="sm" className="transition-bounce hover:scale-110">
-              <Linkedin className="h-5 w-5" />
+            <Button variant="ghost" size="sm" className="transition-bounce hover:scale-110" asChild>
+              <a href="https://linkedin.com/in/pawangupta" target="_blank" rel="noopener noreferrer">
+                <Linkedin className="h-5 w-5" />
+              </a>
             </Button>
-            <Button variant="ghost" size="sm" className="transition-bounce hover:scale-110">
-              <Mail className="h-5 w-5" />
+            <Button variant="ghost" size="sm" className="transition-bounce hover:scale-110" asChild>
+              <a href="mailto:pkg739895@gmail.com">
+                <Mail className="h-5 w-5" />
+              </a>
             </Button>
           </div>
           

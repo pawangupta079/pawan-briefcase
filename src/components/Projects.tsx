@@ -5,26 +5,18 @@ import { ExternalLink, Github } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A modern, fully responsive e-commerce platform built with React and Node.js, featuring real-time inventory management and secure payment processing.",
-      tech: ["React", "Node.js", "PostgreSQL", "Stripe"],
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop",
+      title: "FitTab – Fitness Tracking & Workout Analysis App",
+      description: "Built with Flask + OpenCV + Mediapipe. Features real-time pose detection, workout tracking, PDF report generation, user profiles, gym locator, and analytics dashboard. Helped users track goals, boosting consistency by 25%.",
+      tech: ["Flask", "OpenCV", "Mediapipe", "SQLite", "JavaScript", "HTML/CSS"],
+      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&h=300&fit=crop",
       github: "#",
       live: "#"
     },
     {
-      title: "AI-Powered Dashboard",
-      description: "An intelligent analytics dashboard that uses machine learning to provide actionable insights and predictive analytics for business metrics.",
-      tech: ["TypeScript", "Python", "TensorFlow", "D3.js"],
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop",
-      github: "#",
-      live: "#"
-    },
-    {
-      title: "Creative Portfolio",
-      description: "A stunning portfolio website for a digital artist, featuring smooth animations, interactive galleries, and optimized performance.",
-      tech: ["Next.js", "Framer Motion", "Sanity CMS"],
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=300&fit=crop",
+      title: "Movie Recommender System",
+      description: "Content-based recommendation system using cosine similarity on TMDB dataset. Responsive web app with backend REST API integration for personalized movie suggestions.",
+      tech: ["Python", "Scikit-learn", "Pandas", "Streamlit", "REST API"],
+      image: "https://images.unsplash.com/photo-1489599735734-79b4169717b1?w=500&h=300&fit=crop",
       github: "#",
       live: "#"
     }
