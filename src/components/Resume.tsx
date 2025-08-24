@@ -56,7 +56,7 @@ const Resume = () => {
                   asChild
                 >
                   <a 
-                    href="https://github.com/pawangupta079/pawangupta079/raw/main/Pawan_Kumar_Gupta_Resume.pdf" 
+                    href="https://github.com/pawangupta079/pawangupta079/blob/main/pawan%20resume%20new(77)all.pdf" 
                     download="Pawan_Kumar_Gupta_Resume.pdf"
                   >
                     <Download className="mr-2 h-5 w-5" />
