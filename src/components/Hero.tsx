@@ -45,12 +45,12 @@ const Hero = () => {
           {/* Social Links */}
           <div className="flex justify-center space-x-6 pt-4">
             <Button variant="ghost" size="sm" className="transition-bounce hover:scale-110" asChild>
-              <a href="https://github.com/pawangupta" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/pawangupta079" target="_blank" rel="noopener noreferrer">
                 <Github className="h-5 w-5" />
               </a>
             </Button>
             <Button variant="ghost" size="sm" className="transition-bounce hover:scale-110" asChild>
-              <a href="https://linkedin.com/in/pawangupta" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/pawan-kumar-gupta-592463254/" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="h-5 w-5" />
               </a>
             </Button>
@@ -71,10 +71,10 @@ const Hero = () => {
             </Button>
             <Button 
               variant="outline" 
-              onClick={() => scrollToSection('contact')}
+              onClick={() => scrollToSection('resume')}
               className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-smooth text-lg px-8 py-6"
             >
-              Get In Touch
+              View Resume
             </Button>
           </div>
         </div>
